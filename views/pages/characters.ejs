@@ -1,0 +1,11 @@
+<%- include('../partials/header'); %>
+
+<main class="main" id="main">
+    <% data.forEach(item=> { %>
+        <div class="container text-center">
+            <a class="item-link" href="/characters/<%= item.id %>"><%= item.name %></a>
+        </div>
+    <% }) %>
+</main>
+
+<%- include('../partials/footer'); %>
